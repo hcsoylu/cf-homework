@@ -121,11 +121,14 @@ const AddInvoice = () => {
             </FloatingLabel>
           </Row>
 
-          <DatePicker
-            dateFormat="dd/MM/yyyy"
-            selected={due}
-            onChange={(date) => setDue(date)}
-          />
+          <div>
+            Click input and pick a due time :{" "}
+            <DatePicker
+              dateFormat="dd/MM/yyyy"
+              selected={due}
+              onChange={(date) => setDue(date)}
+            />
+          </div>
 
           <h4 className="my-5">Add Items</h4>
           <Row>

@@ -59,6 +59,9 @@ const InvoiceDetail = () => {
             <div className="mt-2">Date : {date}</div>{" "}
           </Col>
         </Row>
+        <Row className="mt-3 border-top border-info">
+          <Col>Description: {invoice?.note && invoice.note}</Col>
+        </Row>
         <div>
           <h4 className="d-flex justify-content-center mt-5 mb-5 fs-5">
             Items Detail
